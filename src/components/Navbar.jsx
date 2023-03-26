@@ -20,7 +20,7 @@ const Page = ({ page, selectedPage, setSelectedPage }) => {
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const isAboveSmallScreen = useMediaQuery("(min-width: 768px)");
+  const isAboveSmallScreen = useMediaQuery("(min-width: 769px)");
   const navbarBackground = isTopOfPage ? "" : "bg-violet-300 transition duration-200";
 
   return (
@@ -30,7 +30,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
         {/* Desktop Nav */}
         {isAboveSmallScreen ? (
-          <div className="flex justify-between gap-16 text-sm font-semibold">
+          <div className="flex justify-between gap-10 text-sm font-semibold">
             <Page
               page="Home"
               selectedPage={selectedPage}

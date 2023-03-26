@@ -2,11 +2,12 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import Navbar from "@/components/Navbar";
+import DotGroup from "@/components/DotGroup";
 
 const Layout = () => {
   const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
-  const isAboveMediumScreen = useMediaQuery("(min-width: 1060px)");
+  const isAboveMediumScreen = useMediaQuery("(min-width: 769px)");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,6 +29,7 @@ const Layout = () => {
         setSelectedPage={setSelectedPage}
       />
       <div className="w-5/6 mx-auto md:h-full">
+        
         {isAboveMediumScreen && (
           <DotGroup
             selectedPage={selectedPage}
