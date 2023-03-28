@@ -3,6 +3,7 @@ import { useState } from "react";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import Navbar from "@/components/Navbar";
 import DotGroup from "@/components/DotGroup";
+import Landing from "@/components/Landing";
 
 const Layout = () => {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -36,6 +37,7 @@ const Layout = () => {
             setSelectedPage={setSelectedPage}
           />
         )}
+        < Landing setSelectedPage={setSelectedPage} />
       </div>
     </div>
   );
