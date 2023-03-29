@@ -6,8 +6,8 @@ Sick lil portfolio website to show off my Dev skills. A little brutalist Ui and 
 ---
 ## Assets 
 
- - Profile picture by [DIYFTW]
- - Icons by [Icon8](https://icons8.com")[https://www.instagram.com/diyftw.club/?next=%2Fftw_diy%2F&hl=en]
+ - Profile picture by [DIYFTW](https://www.instagram.com/diyftw.club/?next=%2Fftw_diy%2F&hl=en)
+ - Icons by [Icon8](https://icons8.com)
 
 
 
