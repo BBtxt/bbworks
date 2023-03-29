@@ -3,6 +3,7 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import Image from "next/image";
+import SocialMediaIcons from "./SocialMediaIcons";
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveMediumScreen = useMediaQuery("(min-width: 769px)");
@@ -14,7 +15,7 @@ const Landing = ({ setSelectedPage }) => {
       {/* Image Section */}
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
         {isAboveMediumScreen ? (
-          <div className="relative z-0 before:absolute before:-top-10 before:-left-10 before:w-full before:h-full before:border-2 before:border-violet-500 before:z-[-1]">
+          <div className="relative z-0 before:absolute before:-top-10 before:-left-10 before:w-full before:h-full before:border-2 before:border-violet-400 before:z-[-1]">
             <Image
               className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
               src="/ProfilePic.jpeg"
@@ -55,12 +56,14 @@ const Landing = ({ setSelectedPage }) => {
               Baker
             </span>
           </p>
-          <p className="mt-4 mb-7 text-sm font-semibold text-center md:text-start">Engineer and Photographer</p>
+          <p className="mt-4 mb-7 text-sm font-semibold text-center md:text-start">
+            Engineer and Photographer
+          </p>
         </motion.div>
 
         {/* Call to Action */}
         <motion.div
-        className="flex mt-5 justify-center border: md:justify-start"
+          className="flex mt-5 justify-center border: md:justify-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -70,24 +73,37 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-            <AnchorLink 
+          <AnchorLink
             className="py-3 px-7 font-semibold bg-violet-400 hover:text-white transition duration-500"
-            onClick={()=> setSelectedPage('contact')}
-            href="#contact">
-                Contact Me
-            </AnchorLink>
+            onClick={() => setSelectedPage("contact")}
+            href="#contact"
+          >
+            Contact Me
+          </AnchorLink>
 
-            <AnchorLink 
+          <AnchorLink
             className="py-0.5 pr-0.5 border-2 border-violet-400 "
-            onClick={()=> setSelectedPage('contact')}
-            href="#contact">
-                <div className=" w-full h-full flex items-center justify-center font-semibold px-10 hover:text-violet-400 transition duration-500">
-                    Let's Talk
-                </div>
-            </AnchorLink>
-
+            onClick={() => setSelectedPage("contact")}
+            href="#contact"
+          >
+            <div className=" w-full h-full flex items-center justify-center font-semibold px-10 hover:text-violet-400 transition duration-500">
+              Let's Talk
+            </div>
+          </AnchorLink>
         </motion.div>
 
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}>
+            
+            < SocialMediaIcons />
+        </motion.div>
       </div>
     </section>
   );
