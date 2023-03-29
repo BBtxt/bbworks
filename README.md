@@ -1,3 +1,16 @@
+# BBWorks 
+Sick lil portfolio website to show off my Dev skills. A little brutalist Ui and some sick animation tings. I hope ya like it. Also if ya hiring! Let ya boy know. 
+
+-B
+
+---
+## Assets 
+
+ - Profile picture by [DIYFTW]
+ - Icons by [Icon8](https://icons8.com")[https://www.instagram.com/diyftw.club/?next=%2Fftw_diy%2F&hl=en]
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
