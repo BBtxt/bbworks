@@ -25,7 +25,7 @@ const SocialMediaIcons = () => {
       >
         <Image
           src="/icons8-github-50.png"
-          alt="gitHub"
+          alt="gitHub" 
           height={30}
           width={30}
         />
