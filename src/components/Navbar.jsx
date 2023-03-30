@@ -26,7 +26,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="text-8xl font-bold">BB</h4>
+        <h4 className="text-3xl font-bold">BB</h4>
 
         {/* Desktop Nav */}
         {isAboveSmallScreen ? (
@@ -34,27 +34,27 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             <Page
               page="Home"
               selectedPage={selectedPage}
-              setSelectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
             />
             <Page
               page="About"
               selectedPage={selectedPage}
-              setSelectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
             />
             <Page
               page="Projects"
               selectedPage={selectedPage}
-              setSelectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
             />
             <Page
               page="Skills"
               selectedPage={selectedPage}
-              setSelectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
             />
             <Page
               page="Contact"
               selectedPage={selectedPage}
-              setSelectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
             />
           </div>
         ) : (
@@ -81,27 +81,27 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               <Page
                 page="Home"
                 selectedPage={selectedPage}
-                setSelectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
               />
               <Page
                 page="About"
                 selectedPage={selectedPage}
-                setSelectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
               />
               <Page
                 page="Projects"
                 selectedPage={selectedPage}
-                setSelectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
               />
               <Page
                 page="Skills"
                 selectedPage={selectedPage}
-                setSelectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
               />
               <Page
                 page="Contact"
                 selectedPage={selectedPage}
-                setSelectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
               />
             </div>
           </div>
