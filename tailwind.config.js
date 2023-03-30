@@ -10,6 +10,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: (theme) => ({
+        'purp':
+        'linear-gradient(to left, rgb(255, 255, 255), rgb(167, 139, 250), rgb(255, 255, 255))',
+      }),
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
       },
