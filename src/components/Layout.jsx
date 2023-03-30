@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import Navbar from "@/components/Navbar";
 import DotGroup from "@/components/DotGroup";
 import Landing from "@/components/Landing";
+import LineGradient from "@/components/LineGradient";
+import About from "@/components/About";
 
 const Layout = () => {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -30,15 +33,32 @@ const Layout = () => {
         setSelectedPage={setSelectedPage}
       />
       <div className="w-5/6 mx-auto md:h-full">
-        
         {isAboveMediumScreen && (
           <DotGroup
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
           />
         )}
-        < Landing setSelectedPage={setSelectedPage} />
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("home")}
+        >
+          <Landing setSelectedPage={setSelectedPage} />
+        </motion.div>
       </div>
+      <div>
+        <LineGradient />
+      </div>
+      <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("home")}
+        >
+      <div className="w-5/6 mx-auto md:h-full">
+        <About />
+      </div>
+      </motion.div>
     </div>
   );
 };
