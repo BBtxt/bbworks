@@ -10,7 +10,7 @@ const About = () => {
     <section id="about" className="pt-10 pb-24">
       {/* Header and Image  */}
 
-      <div className=" flex flex-col justify-center md:flex md:justify-between md:flex-row md:gap-12 mt-32 ">
+      <div className="md:flex md:justify-between md:gap-16 mt-32">
         {isAboveMediumScreen ? null : (
           <p className="flex justify-center font-semibold text-4xl mb-8 text-roboto">
             <span className="text-violet-400">ABOUT</span> ME
@@ -72,7 +72,7 @@ const About = () => {
 
           {isAboveMediumScreen ? <LineGradient /> : null}
 
-          <p className="mt-10 mb-7 text-s text-roboto">
+          <p className="mt-10 mb-7 text-sm font-roboto">
             I am a software engineer and photographer based in Seattle. I have
             been formally trained in maritime engineering and have been working
             in the industry for over 5 years. I have a passion for building
@@ -83,6 +83,10 @@ const About = () => {
             collaborate on a project.
           </p>
         </motion.div>
+        
+
+
+
       </div>
     </section>
   );
