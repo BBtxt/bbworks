@@ -26,11 +26,11 @@ const Projects = () => {
           </div>
           </motion.div>
 
-          <div className='md:w-4/5 mx-auto border-2 border-black'>
+          <div className='md:w-4/5 mx-auto border border-black'>
             <div>
-              <p className='font-roboto font-semibold text-2xl text-center border-b-2 border-black py-3'>BBlog.world</p>
+              <p className='font-roboto font-semibold text-2xl text-center border-b border-black py-3'>BBlog.world</p>
             </div>
-            <div>
+            <div className='py-2'>
               <Image
               className='mx-auto'
               src='/BBlogWorld.gif'
@@ -39,19 +39,59 @@ const Projects = () => {
               height={500}
               />
             </div>
-            <div className='border-y-2 border-black flex justify-between '>
-              <p className=''>Specs:</p>
-              <p>next.js graphql hygraph tailwind</p>
-            </div>
-            <div>
-              <p>About:</p>
-              <p className='mx-auto px-2 text-center'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur</p>
+            
+            <div className='border-t border-black'>
+              <p className='mx-auto px-4 py-2 text-center'>Full Stack application that uses Next.js, GraphQL, Hygraph, and Tailwind. This is a blog site that use Hygraph CMS for content management. The site is fully responsive for desktop and mobile. Leverages Instagram API to mirror my feed. The site is hosted on Vercel.
+              </p>
+           
             </div>
             <div className='flex flex-row justify-evenly'>
-              <button>Live Preview</button>
-              <button>Code</button>
+              <a className='w-1/2 text-center border-t border-black text-violet-400 font-semibold hover:-translate-y-px transition duration-700'
+              href="https://www.bblog.world/"
+              target="_blank"
+              rel="noreferrer"
+               >Live Preview</a>
+              <a className='w-1/2 text-center border-t border-l border-black bg-violet-400 font-semibold text-white hover:-translate-y-px transition duration-700 before:bg-inherit'
+              href="https://github.com/BBtxt/bblog_world"
+              target="_blank"
+              rel="noreferrer"
+              >Code</a>
             </div>
           </div>
+
+          <div className='md:w-4/5 mx-auto mt-8 border border-black'>
+            <div>
+              <p className='font-roboto font-semibold text-2xl text-center border-b border-black py-3'>BBlog.world</p>
+            </div>
+            <div className='py-2'>
+              <Image
+              className='mx-auto'
+              src='/BBlogWorld.gif'
+              alt='BBlogWorld website gif'
+              width={500}
+              height={500}
+              />
+            </div>
+            
+            <div className='border-t border-black'>
+              <p className='mx-auto px-4 py-2 text-center'>Full Stack application that uses Next.js, GraphQL, Hygraph, and Tailwind. This is a blog site that use Hygraph CMS for content management. The site is fully responsive for desktop and mobile. Leverages Instagram API to mirror my feed. The site is hosted on Vercel.
+              </p>
+           
+            </div>
+            <div className='flex flex-row justify-evenly'>
+              <a className='w-1/2 text-center border-t border-black text-violet-400 font-semibold hover:-translate-y-px transition duration-700'
+              href="https://www.bblog.world/"
+              target="_blank"
+              rel="noreferrer"
+               >Live Preview</a>
+              <a className='w-1/2 text-center border-t border-l border-black bg-violet-400 font-semibold text-white hover:-translate-y-px transition duration-700 before:bg-inherit'
+              href="https://github.com/BBtxt/bblog_world"
+              target="_blank"
+              rel="noreferrer"
+              >Code</a>
+            </div>
+          </div>
+
 
 
 
