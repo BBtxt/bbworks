@@ -7,6 +7,7 @@ import DotGroup from "@/components/DotGroup";
 import Landing from "@/components/Landing";
 import LineGradient from "@/components/LineGradient";
 import About from "@/components/About";
+import Projects from "@/components/Projects";
 
 const Layout = () => {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -39,26 +40,21 @@ const Layout = () => {
             setSelectedPage={setSelectedPage}
           />
         )}
-        <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("home")}
-        >
+       
           <Landing setSelectedPage={setSelectedPage} />
-        </motion.div>
+
       </div>
       <div>
         <LineGradient />
       </div>
-      <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("home")}
-        >
+
       <div className="w-5/6 mx-auto md:h-full">
         <About />
       </div>
-      </motion.div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        <Projects />
+      </div>
     </div>
   );
 };
