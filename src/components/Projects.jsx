@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import useMediaQuery from "@/hooks/useMediaQuery";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -14,9 +13,16 @@ const itemVariants = {
 };
 
 const Projects = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const isAboveMediumScreen = useMediaQuery("(min-width: 769px)");
+  const [isOpenMenu1, setIsOpenMenu1] = useState(false);
+  const [isOpenMenu2, setIsOpenMenu2] = useState(false);
+  const handleMenu1Clicked = () => {
+    setIsOpenMenu1(!isOpenMenu1);
+  }
+  const handleMenu2Clicked = () => {
+    setIsOpenMenu2(!isOpenMenu2);
+  }
 
+  
   return (
     <section id="projects" className="pt-48 pb-48">
       {/* Heading */}
@@ -54,12 +60,12 @@ const Projects = () => {
             <motion.nav
               className=""
               initial={false}
-              animate={isOpen ? "open" : "closed"}
+              animate={isOpenMenu1 ? "open" : "closed"}
             >
               <motion.button
                 className=" w-full flex items-center justify-between gap-6 border p-2 mb-4"
                 whileTap={{ scale: 0.97 }}
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={handleMenu1Clicked}
               >
                 About
                 <motion.div
@@ -97,7 +103,7 @@ const Projects = () => {
                     },
                   },
                 }}
-                style={{ pointerEvents: isOpen ? "auto" : "none" }}
+                style={{ pointerEvents: isOpenMenu1 ? "auto" : "none" }}
               >
                 <motion.li
                   variants={itemVariants}
@@ -174,12 +180,12 @@ const Projects = () => {
             <motion.nav
               className=""
               initial={false}
-              animate={isOpen ? "open" : "closed"}
+              animate={isOpenMenu2 ? "open" : "closed"}
             >
               <motion.button
                 className=" w-full flex items-center justify-between gap-6 border p-2 mb-4"
                 whileTap={{ scale: 0.97 }}
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={handleMenu2Clicked}
               >
                 About
                 <motion.div
@@ -217,7 +223,7 @@ const Projects = () => {
                     },
                   },
                 }}
-                style={{ pointerEvents: isOpen ? "auto" : "none" }}
+                style={{ pointerEvents: isOpenMenu2 ? "auto" : "none" }}
               >
                 <motion.li
                   variants={itemVariants}
@@ -226,7 +232,9 @@ const Projects = () => {
                   Abstract:
                 </motion.li>
                 <motion.li variants={itemVariants} className="text-sm">
-                  Application that takes of Three.js library to create a 3D space scene that can be navigated with the mouse. Includes randomly generated stars and planet with rotating ring. 
+                  Application that takes of Three.js library to create a 3D
+                  space scene that can be navigated with the mouse. Includes
+                  randomly generated stars and planet with rotating ring.
                 </motion.li>
                 <motion.li
                   className="text-sm font-semibold"
@@ -238,7 +246,7 @@ const Projects = () => {
                   variants={itemVariants}
                   className="text-sm font-semibold text-red-400 "
                 >
-                  Out Development
+                  Out of Development
                 </motion.li>
                 <motion.li
                   variants={itemVariants}
@@ -261,98 +269,6 @@ const Projects = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className="md:w-4/5 mx-auto border border-black">
-        <div>
-          <p className="font-roboto font-semibold text-2xl text-center border-b border-black py-3">
-            BBlog.world
-          </p>
-        </div>
-        <div className="py-2">
-          <Image
-            className="mx-auto"
-            src="/BBlogWorld.gif"
-            alt="BBlogWorld website gif"
-            width={500}
-            height={500}
-          />
-        </div>
-
-        <div className="border-t border-black">
-          <p className="mx-auto px-4 py-2 text-center">
-            Full Stack application that uses Next.js, GraphQL, Hygraph, and
-            Tailwind. This is a blog site that use Hygraph CMS for content
-            management. The site is fully responsive for desktop and mobile.
-            Leverages Instagram API to mirror my feed. The site is hosted on
-            Vercel.
-          </p>
-        </div>
-        <div className="flex flex-row justify-evenly">
-          <a
-            className="w-1/2 text-center border-t border-black text-violet-400 font-semibold hover:-translate-y-px transition duration-700"
-            href="https://www.bblog.world/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Live Preview
-          </a>
-          <a
-            className="w-1/2 text-center border-t border-l border-black bg-violet-400 font-semibold text-white hover:-translate-y-px transition duration-700 before:bg-inherit"
-            href="https://github.com/BBtxt/bblog_world"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Code
-          </a>
-        </div>
-      </div>
-
-      <div className="md:w-4/5 mx-auto mt-8 ">
-        <div>
-          <p className="font-roboto font-semibold text-2xl text-center border-b border-black py-3">
-            BBlog.world
-          </p>
-        </div>
-        <div className="py-2">
-          <Image
-            className="mx-auto"
-            src="/BBlogWorld.gif"
-            alt="BBlogWorld website gif"
-            width={500}
-            height={500}
-          />
-        </div>
-
-        <div className="border border-black">
-          <p className="mx-auto px-4 py-2 text-center">
-            Full Stack application that uses Next.js, GraphQL, Hygraph, and
-            Tailwind. This is a blog site that use Hygraph CMS for content
-            management. The site is fully responsive for desktop and mobile.
-            Leverages Instagram API to mirror my feed. The site is hosted on
-            Vercel.
-          </p>
-        </div>
-        <div className="flex flex-row justify-evenly">
-          <motion.a
-            className="w-1/4 text-center border border-black text-violet-400 font-semibold"
-            href="https://www.bblog.world/"
-            target="_blank"
-            rel="noreferrer"
-            whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          >
-            Live Preview
-          </motion.a>
-          <a
-            className="w-1/4 text-center border-t border-l border-black bg-violet-400 font-semibold text-white hover:-translate-y-px transition duration-700 before:bg-inherit"
-            href="https://github.com/BBtxt/bblog_world"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Code
-          </a>
-        </div>
-      </div> */}
     </section>
   );
 };
