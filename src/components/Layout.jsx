@@ -34,13 +34,7 @@ const Layout = () => {
         setSelectedPage={setSelectedPage}
       />
       <div className="w-5/6 mx-auto md:h-full">
-        {isAboveMediumScreen && (
-          <DotGroup
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-          />
-        )}
-       
+        
           <Landing setSelectedPage={setSelectedPage} />
 
       </div>
