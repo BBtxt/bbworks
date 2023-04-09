@@ -86,7 +86,7 @@ const About = () => {
       </div>
 
       {/* Skills Section */}
-      <div className="md:flex md:justify-between mt-16 gap-32">
+      <div className="md:flex md:justify-between mt-16 mb-8 gap-32">
         {/* EXPERIENCE */}
         <motion.div
           className="md:w-1/3 mt-10"
@@ -106,16 +106,13 @@ const About = () => {
                 Experience
               </p>
             </div>
-
           </div>
-          <p className="mt-5">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
-            morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
-            odio sit sagittis,
+          <p className="">
+           Working on complex systems in the maritime industry has given me the insights how to troubleshoot and solve problems. I have been involved in the design, construction, and commissioning of many projects.
           </p>
         </motion.div>
 
-        {/* INNOVATIVE */}
+        {/* CURIOSITY */}
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -131,16 +128,13 @@ const About = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl bg-blue-400">02</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Innovative
+                Curiosity
               </p>
             </div>
 
           </div>
-          <p className="mt-5">
-            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-            faucibus a
+          <p className="">
+           I have a knack for figuring out how things work. Having an understanding all parts of system interact and symbiotically  . I am always looking for new opportunities to learn and grow. 
           </p>
         </motion.div>
         {/* IMAGINATIVE */}
@@ -164,11 +158,8 @@ const About = () => {
             </div>
 
           </div>
-          <p className="mt-5">
-            Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
-            curabitur. Lectus libero, egestas enim aliquam quis felis amet.
-            Sagittis, amet netus fringilla netus lobortis odio sed platea.
-            Bibendum.
+          <p className="">
+           From looking at a scene and imagining how it would look in a different light to building a system that would solve a problem. I have always been able to see the bigger picture and how things fit together.
           </p>
         </motion.div>
       </div>
