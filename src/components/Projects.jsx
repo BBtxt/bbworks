@@ -17,12 +17,11 @@ const Projects = () => {
   const [isOpenMenu2, setIsOpenMenu2] = useState(false);
   const handleMenu1Clicked = () => {
     setIsOpenMenu1(!isOpenMenu1);
-  }
+  };
   const handleMenu2Clicked = () => {
     setIsOpenMenu2(!isOpenMenu2);
-  }
+  };
 
-  
   return (
     <section id="projects" className="pt-48 pb-48">
       {/* Heading */}
