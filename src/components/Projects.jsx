@@ -37,14 +37,14 @@ const Projects = () => {
         }}
       >
         <div>
-          <p className="font-semibold text-6xl mb-5 text-roboto">Projects</p>
+          <p className="font-semibold text-8xl mb-5 font-bebas">Projects</p>
         </div>
       </motion.div>
 
       {/* PROJECT 1 */}
 
       <div className="md:w4/5 mx-auto content-center mb-12">
-        <p className="text-2xl font-semibold text-center mb-4">/bblog_world</p>
+        <p className="text-2xl font-semibold  font-bebas text-center mb-4">/bblog_world</p>
         <div className="flex justify-center flex-col gap-12 md:flex-row  md:justify-stretch">
           <div className="">
             <Image
@@ -62,7 +62,7 @@ const Projects = () => {
               animate={isOpenMenu1 ? "open" : "closed"}
             >
               <motion.button
-                className=" w-full flex items-center justify-between gap-6 border p-2 mb-4"
+                className=" w-full flex items-center justify-between gap-6 font-roboto p-2 mb-4"
                 whileTap={{ scale: 0.97 }}
                 onClick={handleMenu1Clicked}
               >
@@ -110,7 +110,7 @@ const Projects = () => {
                 >
                   Abstract:
                 </motion.li>
-                <motion.li variants={itemVariants} className="text-sm">
+                <motion.li variants={itemVariants} className="text-sm font-roboto">
                   Full Stack application that uses Next.js, GraphQL, Hygraph,
                   and Tailwind. This is a blog site that use Hygraph CMS for
                   content management. The site is fully responsive for desktop
@@ -118,27 +118,27 @@ const Projects = () => {
                   site is hosted on Vercel.
                 </motion.li>
                 <motion.li
-                  className="text-sm font-semibold"
+                  className="text-sm font-semibold font-roboto"
                   variants={itemVariants}
                 >
                   Status:
                 </motion.li>
                 <motion.li
                   variants={itemVariants}
-                  className="text-sm font-semibold text-green-400 "
+                  className="text-sm font-semibold text-green-400 font-roboto "
                 >
                   Continuous Development
                 </motion.li>
                 <motion.li
                   variants={itemVariants}
-                  className="text-sm font-semibold"
+                  className="text-sm font-semibold font-roboto"
                 >
                   Links:
                 </motion.li>
                 <motion.li variants={itemVariants}>
                   {" "}
                   <a
-                    className="text-sm underline"
+                    className="text-sm underline font-roboto"
                     href="https://www.bblog.world/"
                     target="_blank"
                     rel="noreferrer"
@@ -148,7 +148,7 @@ const Projects = () => {
                 </motion.li>
                 <motion.li variants={itemVariants}>
                   <a
-                    className="text-sm  underline"
+                    className="text-sm  underline font-roboto"
                     href="https://github.com/BBtxt/bblog_world"
                     target="_blank"
                     rel="noreferrer"
@@ -164,7 +164,7 @@ const Projects = () => {
 
       {/* PROJECT 2 */}
       <div className="md:w4/5 mx-auto content-center">
-        <p className="text-2xl font-semibold text-center mb-4">/threeD</p>
+        <p className="text-2xl font-semibold text-center mb-4 font-bebas">/threeD</p>
         <div className="flex justify-center flex-col gap-12 md:flex-row  md:justify-stretch">
           <div className="">
             <Image
@@ -182,7 +182,7 @@ const Projects = () => {
               animate={isOpenMenu2 ? "open" : "closed"}
             >
               <motion.button
-                className=" w-full flex items-center justify-between gap-6 border p-2 mb-4"
+                className=" w-full flex items-center justify-between gap-6 font-roboto p-2 mb-4"
                 whileTap={{ scale: 0.97 }}
                 onClick={handleMenu2Clicked}
               >
@@ -226,30 +226,30 @@ const Projects = () => {
               >
                 <motion.li
                   variants={itemVariants}
-                  className="text-sm font-semibold"
+                  className="text-sm font-semibold font-roboto"
                 >
                   Abstract:
                 </motion.li>
-                <motion.li variants={itemVariants} className="text-sm">
+                <motion.li variants={itemVariants} className="text-sm font-roboto">
                   Application that takes of Three.js library to create a 3D
                   space scene that can be navigated with the mouse. Includes
                   randomly generated stars and planet with rotating ring.
                 </motion.li>
                 <motion.li
-                  className="text-sm font-semibold"
+                  className="text-sm font-semibold font-roboto"
                   variants={itemVariants}
                 >
                   Status:
                 </motion.li>
                 <motion.li
                   variants={itemVariants}
-                  className="text-sm font-semibold text-red-400 "
+                  className="text-sm font-semibold text-red-400 font-roboto "
                 >
                   Out of Development
                 </motion.li>
                 <motion.li
                   variants={itemVariants}
-                  className="text-sm font-semibold"
+                  className="text-sm font-semibold font-roboto"
                 >
                   Links:
                 </motion.li>

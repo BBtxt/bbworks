@@ -13,8 +13,8 @@ const About = () => {
       <div className="md:flex md:justify-between md:gap-16 mt-32">
         {/* SmallScreen ABOUT ME */}
         {isAboveMediumScreen ? null : (
-          <p className="flex justify-center font-semibold text-4xl mb-8 text-roboto">
-            <span className="text-violet-400">ABOUT</span> ME
+          <p className="flex justify-center font-semibold text-6xl mb-8 font-bebas">
+            <span className="text-violet-400">ABOUT </span> ME
           </p>
         )}
         {/* Photo */}
@@ -54,7 +54,7 @@ const About = () => {
 
         {/* Text Section */}
         <motion.div
-          className="md:w-1/2"
+          className="md:w-1/2 flex flex-col justify-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -65,20 +65,15 @@ const About = () => {
           }}
         >
           {isAboveMediumScreen ? (
-            <p className="order-2 font-semibold text-4xl mb-5 text-roboto">
+            <p className="font-semibold text-6xl font-bebas">
               <span className="text-violet-400">ABOUT</span> ME
             </p>
           ) : null}
 
-          {isAboveMediumScreen ? <LineGradient /> : null}
-
-          <p className="mt-10 mb-7 text-sm font-roboto">
-            I am an engineer and photographer based in Seattle. I have
-            been formally trained in maritime engineering and have been working
-            in the industry for over 5 years. I have a passion for building
-            things and I love to learn new things. I am also a photographer and
-            I love to take pictures of landscapes and street photography. I am
-            always looking for new opportunities to learn and grow. Feel free to
+          <p className="mt-4 mb-5 text-sm font-roboto">
+            I am an engineer and photographer based in Seattle. Formally trained in maritime engineering and have been working in the field for over 5 years. I have a passion for building
+            projects and I love to learn new skills. My other passion is photography, 
+            I have always enjoyed taking pictures of landscapes and elements of street photography. One fact about me is that, I am always looking for new opportunities to learn and grow. Feel free to
             reach out to me if you have any questions or if you want to
             collaborate on a project.
           </p>
@@ -99,16 +94,16 @@ const About = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32">
+          <div className="relative h-28">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl bg-sky-400">01</p>
-              <p className="font-playfair font-semibold text-3xl mt-3 bg-transparent">
+              <p className="font-bebas font-semibold text-5xl bg-sky-400">01</p>
+              <p className="font-bebas font-semibold text-3xl mt-3 bg-transparent">
                 Experience
               </p>
             </div>
           </div>
-          <p className="">
-           Working on complex systems in the maritime industry has given me the insights how to troubleshoot and solve problems. I have been involved in the design, construction, and commissioning of many projects.
+          <p className="font-roboto">
+           Working on complex systems in the maritime industry has given me the insights how to troubleshoot and solve problems. In my past experience I have mastered my skills in design, construction, and commissioning of many projects.
           </p>
         </motion.div>
 
@@ -124,17 +119,17 @@ const About = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32">
+          <div className="relative h-28">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl bg-blue-400">02</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
+              <p className="font-bebas font-semibold text-5xl bg-blue-400">02</p>
+              <p className="font-bebas font-semibold text-3xl mt-3">
                 Curiosity
               </p>
             </div>
 
           </div>
-          <p className="">
-           I have a knack for figuring out how things work. Having an understanding all parts of system interact and symbiotically  . I am always looking for new opportunities to learn and grow. 
+          <p className="font-roboto">
+           I have a knack for figuring out how things work. Within every project that I am producing I make sure to have a understanding of all parts of systems interact and symbiotically  . I am always looking for new opportunities to learn and grow. 
           </p>
         </motion.div>
         {/* IMAGINATIVE */}
@@ -149,16 +144,15 @@ const About = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32">
+          <div className="relative h-28">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl bg-indigo-400">03</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
+              <p className="font-bebas font-semibold text-5xl bg-indigo-400">03</p>
+              <p className="font-bebas font-semibold text-3xl mt-3">
                 Imaginative
               </p>
             </div>
-
           </div>
-          <p className="">
+          <p className="font-roboto">
            From looking at a scene and imagining how it would look in a different light to building a system that would solve a problem. I have always been able to see the bigger picture and how things fit together.
           </p>
         </motion.div>

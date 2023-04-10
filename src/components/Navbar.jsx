@@ -21,16 +21,16 @@ const Page = ({ page, selectedPage, setSelectedPage }) => {
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const isAboveSmallScreen = useMediaQuery("(min-width: 769px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-violet-300 transition duration-200 opacity-75";
+  const navbarBackground = isTopOfPage ? "" : "bg-violet-300 transition duration-500 opacity-75";
 
   return (
-    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
+    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-2`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="text-3xl font-bold">BB</h4>
+        <h4 className="text-5xl font-extrabold font-bebas">BB</h4>
 
         {/* Desktop Nav */}
         {isAboveSmallScreen ? (
-          <div className="flex justify-between gap-10 text-sm font-semibold">
+          <div className="flex justify-between gap-10 text-sm font-roboto font-semibold">
             <Page
               page="Home"
               selectedPage={selectedPage}
@@ -72,7 +72,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             </div>
 
             {/* Menu Items */}
-            <div className="flex flex-col gap-10 ml-[33%] text-2xl">
+            <div className="flex flex-col gap-10 ml-[33%] font-semibold font-roboto text-2xl">
               <Page
                 page="Home"
                 selectedPage={selectedPage}
