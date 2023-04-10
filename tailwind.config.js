@@ -16,6 +16,7 @@ module.exports = {
       }),
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
+        bebas: ["Bebas Neue", "cursive"],
       },
       screens: {
         xs: '480px',
