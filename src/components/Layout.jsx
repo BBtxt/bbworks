@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
-import { motion } from "framer-motion";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import Navbar from "@/components/Navbar";
-import DotGroup from "@/components/DotGroup";
 import Landing from "@/components/Landing";
 import LineGradient from "@/components/LineGradient";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
 const Layout = () => {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -34,9 +33,7 @@ const Layout = () => {
         setSelectedPage={setSelectedPage}
       />
       <div className="w-5/6 mx-auto md:h-full">
-        
-          <Landing setSelectedPage={setSelectedPage} />
-
+        <Landing setSelectedPage={setSelectedPage} />
       </div>
       <div>
         <LineGradient />
@@ -48,6 +45,10 @@ const Layout = () => {
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">
         <Projects />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto h-full">
+      <Contact/>
       </div>
     </div>
   );
