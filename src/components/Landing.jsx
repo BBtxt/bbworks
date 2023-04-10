@@ -50,13 +50,13 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl z-10 font-extrabold text-center text-roboto md:text-start -">
+          <p className="text-8xl z-10  font-bebas font-extrabold text-center text-roboto md:text-start -">
             Brandon {""}
-            <span className="xs:relative xs:text-violet-400 xs:font-semibold z-20 -pt-10 -mt-10">
+            <span className="xs:relative xs:text-violet-400 xs:font-semibold  font-bebas z-20 -pt-10 -mt-10">
               Baker
             </span>
           </p>
-          <p className="mt-4 mb-7 text-sm font-semibold text-center md:text-start">
+          <p className="mt-4 mb-7 text-sm  font-roboto font-semibold text-center md:text-start">
             Engineer and Photographer
           </p>
         </motion.div>
@@ -74,7 +74,7 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            className="py-3 px-7 font-semibold bg-violet-400 hover:text-white transition duration-500"
+            className="py-3 px-7 font-semibold font-roboto bg-violet-400 hover:text-white transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
@@ -86,7 +86,7 @@ const Landing = ({ setSelectedPage }) => {
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            <div className=" w-full h-full flex items-center justify-center font-semibold px-10 hover:text-violet-400 transition duration-500">
+            <div className=" w-full h-full flex items-center justify-center font-roboto font-semibold px-10 hover:text-violet-400 transition duration-500">
               Let's Talk
             </div>
           </AnchorLink>
