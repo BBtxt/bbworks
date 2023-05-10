@@ -21,7 +21,7 @@ const Page = ({ page, selectedPage, setSelectedPage }) => {
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const isAboveSmallScreen = useMediaQuery("(min-width: 769px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-violet-300 transition duration-500 opacity-75";
+  const navbarBackground = isTopOfPage ? "" : "bg-zinc-200 transition duration-500 opacity-75";
 
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-2`}>
@@ -100,5 +100,4 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
     </nav>
   );
 };
-
 export default Navbar;
