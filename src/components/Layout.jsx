@@ -32,22 +32,22 @@ const Layout = () => {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-3/4 mx-auto md:h-full">
         <Landing setSelectedPage={setSelectedPage} />
       </div>
       <div>
         <LineGradient />
       </div>
 
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-3/4 mx-auto md:h-full">
         <About />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-3/4 mx-auto md:h-full">
         <Projects />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto h-full">
+      <div className="w-3/4 mx-auto h-full">
       <Contact/>
       </div>
     </div>
