@@ -66,7 +66,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
         {/* Mobile Nav */}
         {!isAboveSmallScreen && isMenuOpen && (
           <div className="fixed right-0 bottom-0 h-full w-full bg-white"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {/* Closed Mobile Nav */}
 
@@ -93,8 +93,8 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 setSelectedPage={setSelectedPage}
               />
               <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="bg-red-600 text-white rounded-full px-4 py-2"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="bg-violet-400 text-white rounded-full px-4 py-2"
               >
                 Close
               </button>
